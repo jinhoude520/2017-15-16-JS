@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //   var  ary = [10];  Array
+    //   ary.join("+");
+    //   var str = "nihao";  String
+    //   str.split("")// ["n","i"]
+
+    // Function  Object
+    function Fn() {
+
+    };
+   var f =  new  Fn;// 对象
+    // 1.所有的函数数据类型（普通的函数、类）都是Function的一个实例；Function 是所有的函数基类；
+    // 2.所有的对象数据类型都是Object的一个实例,Object 是所有对象数据类型的基类
+    //    console.log(fn instanceof Function);// true
+    //    console.log(Array instanceof Function);// true
+    //
+    //    console.log(fn instanceof Object);// true
+
+//    console.log(Function instanceof Object);// true
+    console.log(Object instanceof Function);// true
+    console.log(Fn instanceof Function);// true
+    console.log(Function instanceof Function);
+
+    // Object 的原型里面没有__proto__ 这个属性；
+    console.log(Fn.hasOwnProperty("name"));
+
+
+</script>
+</body>
+</html>
